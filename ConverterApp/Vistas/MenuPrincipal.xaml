@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConverterApp.Vistas.MenuPrincipal">
+    <StackLayout Orientation="Vertical">
+        <Label Text="Converted" />
+        <Frame>
+            <StackLayout>
+                <Image Source="https://i.ytimg.com/vi/8j9zMok6two/hqdefaulst.jpg" />
+                <Button Text="Click here" CornerRadius="24" BackgroundColor="#0099ff" TextColor="#fff" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
