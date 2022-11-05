@@ -10,8 +10,7 @@ namespace ConverterApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MenuPrincipal();
+            MainPage = new NavigationPage(new MenuPrincipal());
         }
 
         protected override void OnStart()
