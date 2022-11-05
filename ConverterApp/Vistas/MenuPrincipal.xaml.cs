@@ -16,5 +16,10 @@ namespace ConverterApp.Vistas
         {
             InitializeComponent();
         }
+
+        private async void navigateToConverted_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Converted());
+        }
     }
 }

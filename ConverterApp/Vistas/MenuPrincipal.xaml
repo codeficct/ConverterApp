@@ -1,13 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ConverterApp.Vistas.MenuPrincipal">
-    <StackLayout Orientation="Vertical">
-        <Label Text="Converted" />
-        <Frame>
-            <StackLayout>
-                <Image Source="https://i.ytimg.com/vi/8j9zMok6two/hqdefaulst.jpg" />
-                <Button Text="Click here" CornerRadius="24" BackgroundColor="#0099ff" TextColor="#fff" />
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ConverterApp.Vistas.MenuPrincipal"
+    NavigationPage.HasNavigationBar="False"
+>
+    <StackLayout BackgroundColor="#282629" Orientation="Vertical" Spacing="0">
+        <Label
+            Text="Conversor"
+            TextColor="#fefefe"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Padding="0, 10, 0, 16"
+        />
+        <Frame
+            HasShadow="False"
+            VerticalOptions="FillAndExpand"
+            Margin="20, 0, 20, 20"
+            CornerRadius="24"
+        >
+            <StackLayout
+                VerticalOptions="Center"
+                Spacing="24"
+                >
+                <Image Source="flexometro" WidthRequest="320" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="28"
+                    HorizontalOptions="Center"
+                    Text="(cm) a (m)"
+                    TextColor="#535353"
+                />
+                <Button
+                    Text="Convertir"
+                    CornerRadius="14"
+                    FontSize="Medium"
+                    BackgroundColor="#282629"
+                    TextColor="#fefefe"
+                    FontAttributes="Bold"
+                    TextTransform="None"
+                    x:Name="navigateToConverted"
+                    Clicked="navigateToConverted_Clicked"
+                />
             </StackLayout>
         </Frame>
     </StackLayout>
