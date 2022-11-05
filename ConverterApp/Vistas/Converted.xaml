@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConverterApp.Vistas.Converted"
+             NavigationPage.HasNavigationBar="False"
+>
+    <Grid 
+        BackgroundColor="#fefefe"
+        RowDefinitions="*,60"
+    >
+        <StackLayout
+            VerticalOptions="Center"
+            Spacing="24"
+        >
+            <Image Source="flexometro2" WidthRequest="280"/>
+            <Frame
+                HasShadow="False"
+                CornerRadius="16"
+                BackgroundColor="#6d7486"
+                Padding="16"
+                Margin="16,0"
+            >
+                <Entry
+                    Keyboard="Numeric"
+                    Placeholder="Centimetros (cm)"
+                    PlaceholderColor="#fefefe"
+                    TextColor="#fefefe"
+                    x:Name="inputCm"
+                />
+            </Frame>
+            <Button
+                Text="Calcular"
+                CornerRadius="14"
+                FontSize="20"
+                BackgroundColor="#282629"
+                TextColor="#fefefe"
+                FontAttributes="Bold"
+                TextTransform="None"
+                Margin="16,0"
+                x:Name="ConvertedCmToM"
+                Clicked="ConvertedCmToM_Clicked"
+            />
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Resultado: "
+                    TextColor="#535353"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="16,0,0,0"
+                    VerticalOptions="Center"
+                />
+                <Label
+                    Text="0.00"
+                    TextColor="#535353"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"
+                    x:Name="showResult"
+                />
+            </StackLayout>
+        </StackLayout>
+        <Button
+            Text="Volver"
+            Grid.Row="1"
+            FontSize="20"
+            BackgroundColor="#282629"
+            TextColor="#fefefe"
+            FontAttributes="Bold"
+            TextTransform="None"
+            Padding="16,0"
+            x:Name="navigateToHome"
+            Clicked="navigateToHome_Clicked"
+        />
+    </Grid>
+</ContentPage>
